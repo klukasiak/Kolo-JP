@@ -1,0 +1,14 @@
+Ulamek operator / (Ulamek u) {
+	return Ulamek(licznik*u.mianownik, mianownik*u.licznik).uprosc();
+}
+
+Ulamek uprosc() {
+	for (int i = 2; i <= licznik; i++) {
+		if (licznik%i == 0 && mianownik%i == 0) {
+			licznik = licznik / i;
+			mianownik = mianownik / i;
+		}
+	}
+
+	return Ulamek(licznik, mianownik);
+}

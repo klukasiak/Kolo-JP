@@ -1,0 +1,8 @@
+VOID kola(HDC hdc) {
+	HBRUSH hbrush;
+	hbrush = CreateSolidBrush(RGB(250, 0, 0));
+	SelectObject(hdc, hbrush);
+	Ellipse(hdc, 0, 0, 100, 100);
+	Ellipse(hdc, 100, 0, 200, 100);
+	Ellipse(hdc, 200, 0, 300, 100);
+}

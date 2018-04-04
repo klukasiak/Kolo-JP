@@ -1,0 +1,11 @@
+void geom(int n, char* nazwa_pliku) {
+	Ulamek u1;
+	ofstream plik;
+	plik.open(nazwa_pliku);
+	for (int i = 1; i <= n; i++) {
+		u1.licznik = 1;
+		u1.mianownik = pow(2, i);
+		plik << u1;
+	}
+	plik.close();
+}

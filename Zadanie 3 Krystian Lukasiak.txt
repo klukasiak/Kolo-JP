@@ -1,0 +1,7 @@
+void listaStudPol() {
+	for (int i = 0; i < liczbaStudentow; i++) {
+		if (listaStudentow[i]->getIdKlasy() == 2) {
+			cout << *static_cast<StudentPolonistyki *>(listaStudentow[i]);
+		}
+	}
+}

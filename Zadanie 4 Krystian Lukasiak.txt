@@ -1,0 +1,6 @@
+Skladowa(double amplituda, double czestotliwosc){
+	this->amplituda = amplituda;
+	if (amplituda < 0) throw ZlaAmplituda();
+	this->czestotliwosc = czestotliwosc;
+	if ( fmod(czestotliwosc, 0.25) != 0 ) throw ZlaCzestotliwosc();
+}
